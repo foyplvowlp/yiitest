@@ -28,33 +28,34 @@ ModernaAsset::register($this);
         <?php $this->beginBody() ?>
         <div class="wrap">
             <?php
-            NavBar::begin([
-                'brandLabel' => 'Yii Test',
-                'brandUrl' => Yii::$app->homeUrl,
-                'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
-                ],
-            ]);
-            $menuItems = [
-                ['label' => 'หน้าแรก', 'url' => ['/site/index']],
-                ['label' => 'เกี่ยวกับ', 'url' => ['/site/about']],
-                ['label' => 'ติดต่อ', 'url' => ['/site/contact']],
-            ];
-            if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'สมัครสมาชิก', 'url' => ['/site/signup']];
-                $menuItems[] = ['label' => 'เข้าระบบ', 'url' => ['/site/login']];
-            } else {
-                $menuItems[] = [
-                    'label' => 'ออกระบบ (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
-            }
-            echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
-                'items' => $menuItems,
-            ]);
-            NavBar::end();
+             NavBar::begin([
+              'brandLabel' => 'Yii Test',
+              'brandUrl' => Yii::$app->homeUrl,
+              'options' => [
+              'class' => 'navbar-inverse navbar-fixed-top',
+              ],
+              ]);
+              $menuItems = [
+              ['label' => 'หน้าแรก', 'url' => ['/site/index']],
+              ['label' => 'เกี่ยวกับ', 'url' => ['/site/about']],
+              ['label' => 'ติดต่อ', 'url' => ['/site/contact']],
+              ];
+              if (Yii::$app->user->isGuest) {
+              $menuItems[] = ['label' => 'สมัครสมาชิก', 'url' => ['/site/signup']];
+              $menuItems[] = ['label' => 'เข้าระบบ', 'url' => ['/site/login']];
+              } else {
+              $menuItems[] = [
+              'label' => 'ออกระบบ (' . Yii::$app->user->identity->username . ')',
+              'url' => ['/site/logout'],
+              'linkOptions' => ['data-method' => 'post']
+              ];
+              }
+              echo Nav::widget([
+              'options' => ['class' => 'navbar-nav navbar-right'],
+              'items' => $menuItems,
+              ]);
+              NavBar::end();
+             
             ?>
 
             <div class="container">

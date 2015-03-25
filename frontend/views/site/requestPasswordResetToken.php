@@ -9,6 +9,12 @@ use yii\bootstrap\ActiveForm;
 $this->title = 'Request password reset';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<?php echo "<br>" ?>
+<?php echo "<br>" ?>
+<?php echo "<br>" ?>
+
+
 <div class="site-request-password-reset">
     <h1><?= Html::encode($this->title) ?></h1>
 

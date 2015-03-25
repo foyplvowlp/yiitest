@@ -11,21 +11,7 @@ $this->title = 'Yii Test';
     <body>
         <div id="wrapper">
             <!-- start header -->
-
-            <header>
-                <div class="navbar navbar-default navbar-static-top">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="index.html"><span>M</span>oderna</a>
-                        </div>                 
-                    </div>
-                </div>
-            </header>
+            <?php echo "<br>" ?>
             <!-- end header -->
             <section id="featured">
                 <!-- start slider -->
@@ -65,10 +51,10 @@ $this->title = 'Yii Test';
                         </div>
                     </div>
                 </div>
-
-
-
             </section>
+            <?php
+                Yii::$app->db->open();
+                ?>
             <section class="callaction">
                 <div class="container">
                     <div class="row">

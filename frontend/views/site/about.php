@@ -1,10 +1,16 @@
 <?php
+
 use yii\helpers\Html;
 
-/* @var $this yii\web\View */
+/* @var $this yii\web\View */ 
 $this->title = 'About';
-$this->params['breadcrumbs'][] = $this->title;
+  $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<?php echo "<br>" ?>
+<?php echo "<br>" ?>
+
+
 <div class="site-about">
     <h1><?= Html::encode($this->title) ?></h1>
 
